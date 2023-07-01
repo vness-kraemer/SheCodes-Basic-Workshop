@@ -18,22 +18,29 @@
       h2 {
         color: #272044;
         text-align: center;
+        font-weight: lighter;
       }
 
       p {
         text-align: center;
       }
+
       button {
-        padding: 15px 20px;
-        color: #7c52ef;
+        border: 1px solid #885df1;
+        border-radius: 30px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
         display: block;
-        text-decoration: none;
+        color: #885df1;
         font-size: 16px;
-        border-radius: 40px;
-        margin: 30px auto;
-        border: 1px solid #7c52ef;
         background: transparent;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        padding: 15px 20px;
+        transition: all 200ms ease;
+      }
+
+      button:hover {
+        color: #fff;
+        background: #885df1;
       }
 
       .coders {
@@ -49,7 +56,37 @@
       img {
         display: block;
         margin: 0 auto;
-        width: 300px;
+        width: 500px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .highlight {
+        color: #885df1;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
       }
     </style>
   </head>
@@ -78,5 +115,9 @@
       src="https://wearetechwomen.com/wp-content/uploads/2021/09/shutterstock_1687431796.jpg"
       alt="Woman Coding"
     />
+    <div class="container">
+      <span class="highlight">Email </span><span>hello@shecodes.io </span>
+      <span class="highlight">Instagram </span><span>@shecodes.io</span>
+    </div>
   </body>
 </html>
