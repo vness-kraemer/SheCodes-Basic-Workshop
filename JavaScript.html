@@ -74,15 +74,12 @@
 
       let country = prompt("What country are you from?");
 
-      if (
-        country.toLowerCase() === "brazil" ||
-        country.toUpperCase() === "BRAZIL" ||
-        country.toLowerCase() === "portugal" ||
-        country.toUpperCase() === "PORTUGAL"
-      ) {
-        alert("You speak Portuguese 🇵🇹");
+      country = country.toLowerCase().trim();
+
+      if (country === "brazil" || country === "portugal") {
+        alert("You speak Portuguese");
       } else {
-        alert("You don't speak Portuguese 🥲");
+        alert("Learn Portuguese!");
       }
     </script>
   </body>
