@@ -67,16 +67,19 @@
       <button>Apply Now</button>
     </section>
     <script>
-      //Ask for your age and if you are below 18, alert
-      //You cannot apply, if you are 18 or more, alert You can apply to SheCodes
-      let age = prompt("What is your age?");
+      //Ask for "What country are you from?" in a prompt
+      //Alert ‘You speak Portuguese’ if you are from Brazil or Portugal
+      //Alert ‘You don't speak Portuguese’ otherwise
+      //Bonus point: make it work with brazil, BRAZIL, PORTUGAL, pORTugal etc
 
-      if (age < 18) {
-        alert("You cannot apply 🥲");
-      }
-      if (age >= 18) {
-        alert("You can apply to SheCodes!💥");
-      }
-    </script>
+      let country = prompt("What country are you from?");
+
+  if (country.toLowerCase() === "brazil" || country.toLowerCase() === "portugal") {
+    alert("You speak Portuguese 🇵🇹");
+  }
+  else {
+    alert("You don't speak Portuguese 🥲");
+  }    
+      </script>
   </body>
-</html>
+</html
