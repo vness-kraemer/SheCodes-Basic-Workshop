@@ -67,20 +67,21 @@
       <button>Apply Now</button>
     </section>
     <script>
-      //Ask for "What country are you from?" in a prompt
-      //Alert ‘You speak Portuguese’ if you are from Brazil or Portugal
-      //Alert ‘You don't speak Portuguese’ otherwise
-      //Bonus point: make it work with brazil, BRAZIL, PORTUGAL, pORTugal etc
-
-      let country = prompt("What country are you from?");
-
-      country = country.toLowerCase().trim();
-
-      if (country === "brazil" || country === "portugal") {
-        alert("You speak Portuguese");
-      } else {
-        alert("Learn Portuguese!");
+      function canSpeakPortuguese() {
+        let country = prompt("Which country are you from?");
+        country = country.toLowerCase().trim();
+        if (country === "portuguese" || country === "brazil") {
+          alert("You speak Portuguese");
+        } else {
+          alert("Go learn Portuguese!");
+        }
       }
+      canSpeakPortuguese();
+      // Create a function canSpeakPortuguese
+      //From inside the function, ask for the user's country
+      //Alert ‘You speak Portuguese’ if from Brazil or Portugal
+      //Alert ‘Go learn Portuguese!’ otherwise
+      // Call the function
     </script>
   </body>
 </html>
